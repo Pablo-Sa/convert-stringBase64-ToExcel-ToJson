@@ -2,12 +2,8 @@ import { writeFile } from "fs/promises";
 import xlsx from "xlsx";
 
 class ExcelService {
-  static async createFileExcelFromStringBase64(
-    base64String: string
-  ): Promise<void> {
-    await writeFile("test.xlsx", base64String, {
-      encoding: "base64",
-    });
+  static async createFileExcelFromStringBase64(base64String: string): Promise<void> {
+    await writeFile("test.xlsx", base64String, {encoding: "base64"});
   }
 
   static async covertFileExcelToJson(): Promise<void> {
