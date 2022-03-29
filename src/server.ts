@@ -1,9 +1,9 @@
-import bodyParser from 'body-parser'
-import express from 'express'
-import { router } from 'src/routes/routes'
+import bodyParser from "body-parser";
+import express from "express";
+import { router } from "src/routes/routes";
 
-const app = express()
+const app = express();
 
-app.use(bodyParser.json())
-app.use(router)
-app.listen(3333, () => console.log('Server is running'))
+app.use(bodyParser.json());
+app.use(router);
+app.listen(3333, () => console.log("Server is running"));
